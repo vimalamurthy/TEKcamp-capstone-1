@@ -1,0 +1,15 @@
+.display {
+  background-color: bisque;
+  border: #eb6134;
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  font-family: 'Times New Roman', cursive;
+}
+
+.display-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
