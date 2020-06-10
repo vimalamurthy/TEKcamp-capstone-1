@@ -1,60 +1,47 @@
 import React, { useState } from 'react';
-import {
-  Table,
-  Button,
-  Input,
-  InputGroup,
-  FormControl,
-  FormGroup,
-  ControlLabel,
-} from 'react-bootstrap';
 import data from './Data';
 import './DisplayItems.css';
 
 function DisplayItems() {
-  const [quantity, setQuantity] = useState('');
+  const selectedItems = [];
 
-  handleChange = (event) => setQuantity(event.target.value);
   return (
     <div className='display'>
-      <Table className='mt-4' striped bordered hover size='sm'>
-        <thead>
-          <tr>
-            <th>Product Name </th>
-            <th>Serial Number</th>
-            <th> Price </th>
-            <th>Supplier</th>
-            <th> Category</th>
-            <th> Quantity</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.Product.map((product, i) => {
-            return (
-              <tr key={i}>
-                <td> {product.Productname} </td>
-                <td> {product.Serialnumber} </td>
-                <td> {product.Price} </td>
-                <td> {product.Supplier} </td>
-                <td> {product.Category} </td>
-                <td> {product.Quantity} </td>
-                <td>
-                  <form>
-                    <FormGroup controlId='quantity' bsSize='large'>
-                      <FormControl
-                        type='Number'
-                        value={quantity}
-                        onChange={handleChange}
-                      />
-                      <ControlLabel>Add</ControlLabel>
-                    </FormGroup>
-                  </form>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </Table>
+      <p className='para-head'>
+        <span>Product</span>
+        <span>Id No.</span>
+        <span>Price </span>
+        <span>Supplier</span>
+        <span>Category</span>
+        <span>Quantity</span>
+      </p>
+
+      {data.Product.map((product, i) => {
+        return (
+          <p className='para-head1' key={i}>
+            <span>
+              {' '}
+              <img src={product.Image}></img>
+            </span>
+            <span>{product.Productname}</span>
+            <span> {product.Serialnumber} </span>
+            <span> {product.Price} </span>
+            <span> {product.Supplier} </span>
+            <span> {product.Category} </span>
+            <span> {product.Quantity} </span>
+            <span>
+              <button
+                type='button'
+                style={{ fontSize: 15, borderRadius: 12 }}
+                onClick={selectedItems.push(product.Productname)}
+              >
+                Add To Cart{' '}
+              </button>
+            </span>
+            <br />
+          </p>
+        );
+      })}
     </div>
   );
 }
