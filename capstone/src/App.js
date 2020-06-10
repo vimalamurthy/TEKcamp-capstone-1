@@ -2,7 +2,8 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import './App.css';
 import logo from './plantlogo.jpg';
-import Display from './Display';
+import { Display, Cart } from './Display';
+import Display1 from './Display1';
 import Navigation from './Navigation';
 import SearchBar from './SearchBar';
 
@@ -15,11 +16,14 @@ function App() {
       </header>
       <div>
         <Navigation />
-        <Route exact path='/SearchBar'>
+        <Route path='/SearchBar'>
           <SearchBar />
         </Route>
         <Route path='/Display'>
           <Display />
+        </Route>
+        <Route path='/Cart'>
+          <Cart />
         </Route>
       </div>
     </div>

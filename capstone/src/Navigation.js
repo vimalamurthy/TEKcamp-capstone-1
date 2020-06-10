@@ -13,7 +13,9 @@ function Navigation() {
         <Link to='/SearchBar'>
           <li>Search</li>
         </Link>
-        <li>Cart View</li>
+        <Link to='/Cart'>
+          <li>Cart View</li>
+        </Link>
       </ul>
     </nav>
   );
