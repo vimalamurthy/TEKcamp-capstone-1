@@ -1,9 +1,9 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.css';
 import logo from './plantlogo.jpg';
 import { Display, Cart } from './Display';
-
+import Home from './Home';
 import Navigation from './Navigation';
 import SearchBar from './SearchBar';
 
@@ -17,13 +17,16 @@ function App() {
       </header>
       <div>
         <Navigation />
-        <Route path='/SearchBar'>
+        <Route path='/Home'>
+          <Home />
+        </Route>
+        <Route exact path='/SearchBar'>
           <SearchBar />
         </Route>
-        <Route path='/Display'>
+        <Route exact path='/Display'>
           <Display />
         </Route>
-        <Route path='/Cart'>
+        <Route exact path='/Cart'>
           <Cart />
         </Route>
       </div>

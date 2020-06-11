@@ -24,8 +24,10 @@
 * Display all items.
 * Store data in one component and pass to child components.
 * Call child comp to display per functionality
-*
-*
+* Search for items on name
+* Making a shopping cart view
+* Manipulate the main file to show change in quantity and add in cart.
+
 <h2>
     3. Executing the Plan
 </h2>
@@ -38,14 +40,16 @@
 * Working on search option
 * Work on Add to Cart option
 *
+
 <h2>
     4. Reflection / Refactor
 </h2>
-* Breaking up to more smaller components
-* Better UI design
-* Adding more bonus functionality
-*
-*
-*
-*
-*
+
+- Better UI design
+- Adding more bonus functionality
+- Breaking up to more smaller components
+-
+-
+-
+-
+-

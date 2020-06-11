@@ -7,14 +7,20 @@ let items = [];
 
 function SearchBar() {
   const [searchText, setsearchText] = useState('');
-  {
-    /*Event handler to search for the item using filter method*/
-  }
+
+  /*Event handler to search for the item using filter method*/
+
   const handleSubmit = (e) => {
+    e.preventDefault();
+    setsearchText(e.target.value);
     items = data.Product.filter((data) =>
       data.Productname.toLowerCase().includes(searchText.toLowerCase())
     );
-    console.log({ items });
+    {
+      /* items = data.Product.filter((data) =>
+      data.Category.toLowerCase().includes(searchText.toLowerCase())
+   );*/
+    }
   };
   return (
     <div>
@@ -28,17 +34,11 @@ function SearchBar() {
           style={{ width: 200, height: 20, padding: 20, borderRadius: 15 }}
           type='text'
           placeholder='Search.. '
-          value={value}
+          value={searchText}
           onChange={(e) => setsearchText(e.target.value)}
         />
       </form>
-      {/* <button
-        style={{ backgroundColor: 'white', fontSize: 22, borderRadius: 15 }}
-        type='button'
-        onClick={handleClick}
-      >
-        Search
-     </button>*/}
+
       <div>
         <div className='display'>
           <div>
@@ -58,7 +58,7 @@ function SearchBar() {
                 <span>
                   {' '}
                   <img
-                    style={{ width: 25, height: 25 }}
+                    style={{ width: 25, height: 25, borderRadius: 50 }}
                     src={product.Image}
                     alt='Product picture'
                   ></img>
