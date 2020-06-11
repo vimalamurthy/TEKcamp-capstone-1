@@ -7,29 +7,38 @@ let items = [];
 
 function SearchBar() {
   const [searchText, setsearchText] = useState('');
-
-  function handleClick() {
+  {
+    /*Event handler to search for the item using filter method*/
+  }
+  const handleSubmit = (e) => {
     items = data.Product.filter((data) =>
       data.Productname.toLowerCase().includes(searchText.toLowerCase())
     );
     console.log({ items });
-  }
+  };
   return (
     <div>
-      <img style={{ width: 25, height: 25 }} src={logo} alt='search logo'></img>
-      <input
-        style={{ width: 200, height: 20, padding: 20, borderRadius: 15 }}
-        type='text'
-        placeholder='Search.. '
-        onChange={(e) => setsearchText(e.target.value)}
-      ></input>
-      <button
+      <form onSubmit={handleSubmit}>
+        <img
+          style={{ width: 25, height: 25 }}
+          src={logo}
+          alt='Search logo'
+        ></img>
+        <input
+          style={{ width: 200, height: 20, padding: 20, borderRadius: 15 }}
+          type='text'
+          placeholder='Search.. '
+          value={value}
+          onChange={(e) => setsearchText(e.target.value)}
+        />
+      </form>
+      {/* <button
         style={{ backgroundColor: 'white', fontSize: 22, borderRadius: 15 }}
         type='button'
         onClick={handleClick}
       >
         Search
-      </button>
+     </button>*/}
       <div>
         <div className='display'>
           <div>
@@ -48,7 +57,11 @@ function SearchBar() {
               <p className='para-head' key={i}>
                 <span>
                   {' '}
-                  <img src={product.Image}></img>
+                  <img
+                    style={{ width: 25, height: 25 }}
+                    src={product.Image}
+                    alt='Product picture'
+                  ></img>
                 </span>
                 <span>{product.Productname}</span>
                 <span> {product.Serialnumber} </span>

@@ -3,7 +3,7 @@ import { Route, Link } from 'react-router-dom';
 import './App.css';
 import logo from './plantlogo.jpg';
 import { Display, Cart } from './Display';
-import Display1 from './Display1';
+
 import Navigation from './Navigation';
 import SearchBar from './SearchBar';
 
@@ -12,7 +12,8 @@ function App() {
     <div className='App'>
       <header className='header'>
         <img className='image' src={logo} alt='Plant shop'></img>
-        <h1>The One-stop Plant shop</h1>
+        <h1>V's Plant Shop</h1>
+        <h3>The One-stop Plant shop</h3>
       </header>
       <div>
         <Navigation />

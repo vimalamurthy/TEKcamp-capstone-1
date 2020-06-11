@@ -52,6 +52,7 @@ function Display() {
               <img
                 style={{ height: 50, width: 50, borderRadius: 50 }}
                 src={product.Image}
+                alt='Image picture'
               ></img>
             </span>
             <span>{product.Productname}</span>
