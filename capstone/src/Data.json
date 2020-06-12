@@ -1,0 +1,130 @@
+{
+  "Product": [
+    {
+      "Image": "./Redrose.jpg",
+      "Productname": "Rose",
+      "Serialnumber": "F123",
+      "Price": 9.99,
+      "Supplier": "Nives Farms",
+      "Category": "Flower",
+      "Quantity": "5"
+    },
+    {
+      "Image": "./Jasmine.jpg",
+      "Productname": "Jasmine",
+      "Serialnumber": "F124",
+      "Price": 9.88,
+      "Supplier": "Madhus Farms",
+      "Category": "Flower",
+      "Quantity": "3"
+    },
+    {
+      "Image": "./Gardenia.jpg",
+      "Productname": "Gardenia",
+      "Serialnumber": "F125",
+      "Price": 12.99,
+      "Supplier": "Nives Farms",
+      "Category": "Flower",
+      "Quantity": "13"
+    },
+    {
+      "Image": "./Zinnia.jpg",
+      "Productname": "Zinnia",
+      "Serialnumber": "F126",
+      "Price": 1.99,
+      "Supplier": "Madhus Farms",
+      "Category": "Flower",
+      "Quantity": "11"
+    },
+    {
+      "Image": "./Marigold.jpg",
+      "Productname": "Marigold",
+      "Serialnumber": "F127",
+      "Price": 1.99,
+      "Supplier": "Nives Farms",
+      "Category": "Flower",
+      "Quantity": "12"
+    },
+    {
+      "Image": "./Orchids.jpg",
+      "Productname": "Orchids",
+      "Serialnumber": "F128",
+      "Price": 15.99,
+      "Supplier": "Madhus Farms",
+      "Category": "Flower",
+      "Quantity": "20"
+    },
+    {
+      "Image": "./Hibiscus.jpg",
+      "Productname": "Hibiscus",
+      "Serialnumber": "F129",
+      "Price": 9.99,
+      "Supplier": "Nives Farms",
+      "Category": "Flower",
+      "Quantity": "25"
+    },
+    {
+      "Image": "./Lillies.jpg",
+      "Productname": "Lillies",
+      "Serialnumber": "F130",
+      "Price": 12.99,
+      "Supplier": "Nives Farms",
+      "Category": "Flower",
+      "Quantity": "30"
+    },
+    {
+      "Image": "./Aster.jpg",
+      "Productname": "Aster",
+      "Serialnumber": "F131",
+      "Price": 11.99,
+      "Supplier": "Madhus Farms",
+      "Category": "Flower",
+      "Quantity": "15"
+    },
+    {
+      "Image": "./Peonies.jpg",
+      "Productname": "Peonies",
+      "Serialnumber": "F132",
+      "Price": 5.99,
+      "Supplier": "Nives Farms",
+      "Category": "Flower",
+      "Quantity": "25"
+    },
+    {
+      "Image": "./Tomatoes.jpg",
+      "Productname": "Tomatoes",
+      "Serialnumber": "V001",
+      "Price": 5.99,
+      "Supplier": "Madhus Farms",
+      "Category": "Veggies",
+      "Quantity": "15"
+    },
+    {
+      "Image": "./Beans.jpg",
+      "Productname": "Beans",
+      "Serialnumber": "V002",
+      "Price": 4.99,
+      "Supplier": "Nives Farms",
+      "Category": "Veggies",
+      "Quantity": "10"
+    },
+    {
+      "Image": "./Peppers.jpg",
+      "Productname": "Peppers",
+      "Serialnumber": "V003",
+      "Price": 2.99,
+      "Supplier": "Nives Farms",
+      "Category": "Veggies",
+      "Quantity": "20"
+    },
+    {
+      "Image": "./Eggplant.jpg",
+      "Productname": "Eggplant",
+      "Serialnumber": "V004",
+      "Price": 3.99,
+      "Supplier": "Madhus Farms",
+      "Category": "Veggies",
+      "Quantity": "15"
+    }
+  ]
+}

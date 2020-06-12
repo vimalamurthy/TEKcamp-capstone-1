@@ -1,0 +1,14 @@
+nav {
+  align-items: center;
+  background: #edb879;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+li {
+  color: black;
+}
